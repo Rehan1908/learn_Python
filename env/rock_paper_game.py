@@ -1,7 +1,13 @@
 import random;
 
-def user_redoornot ():
-        print("You Won. If you Want to play again enter y")
+computer_score = 0
+user_score = 0
+
+
+def user_redoornot (decision):
+        print(f"You {decision}")
+        print(f"the score is Computer : {computer_score} , User : {user_score}")
+        print("if you want to play again press y")
         play_again = input()
         play_again.lower
         if play_again == "y":
@@ -31,18 +37,20 @@ while is_game_playing:
 
     if user1_move == computer_move:
         print("This is a Tie. Choose another Move")
-        if user_redoornot() == "yes":
+        if user_redoornot("Tied") == "yes":
            continue
         else:
            break
     elif user1_move == "rock" and computer_move == "paper" or  user1_move == "paper" and computer_move == "rock" or user1_move == "scssors" and computer_move == "paper":
-       if user_redoornot() == "yes":
-           continue
+       user_score += 1
+       if user_redoornot("won") == "yes":
+        continue
        else:
         break
     else:
       print("Computer Won")
-      if user_redoornot() == "yes":
+      computer_score += 1
+      if user_redoornot("Lost") == "yes":
            continue
       else:
            break
