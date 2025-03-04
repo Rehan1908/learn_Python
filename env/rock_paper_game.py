@@ -36,7 +36,6 @@ while is_game_playing:
 
 
     if user1_move == computer_move:
-        print("This is a Tie. Choose another Move")
         if user_redoornot("Tied") == "yes":
            continue
         else:
