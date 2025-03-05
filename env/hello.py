@@ -1,10 +1,7 @@
-greetings = ["Hello", "Bonjour", "Hola"]
-
-for greeting in greetings:
-    print(f"{greeting}, World!")
+n = int(input("Enter a Positive Integer: "))
 
 
-    list = [1, 2, 3, 4, 5]
-    for i in  range(len(list)):
-        print(list[i])
-
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
+print(f"The factorial of {n} is {factorial}")
