@@ -366,7 +366,7 @@ for x in range(0, 5):
 
 # LIST (list)
 # - Ordered collection of items enclosed in square brackets []
-# - Mutable: can be modified after creatio n (add, remove, change items)
+# - Mutable: can be modified after creation (add, remove, change items)
 # - Elements can be of different data types
 # - Common methods: .append(), .remove(), .insert(), .pop(), .sort()
 # - Supports indexing, slicing, and iteration
